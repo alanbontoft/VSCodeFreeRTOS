@@ -58,7 +58,7 @@ const osTimerAttr_t ledTimer_attributes = {
 };
 /* USER CODE BEGIN PV */
 int mainCounter = 0, scaleCounter = 0;
-char buffer[30]; // *msg = "Timeout!\n";
+char buffer[30];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -128,7 +128,7 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_TIMERS */
   /* start timers, add new ones, ... */
-  osTimerStart(ledTimerHandle, 1000);
+  osTimerStart(ledTimerHandle, 500);
   /* USER CODE END RTOS_TIMERS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
